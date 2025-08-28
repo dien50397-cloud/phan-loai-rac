@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Loại Rác</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Phân loại rác bằng AI</h1>
+        <p>Vui lòng chọn hoặc kéo thả hình ảnh rác thải vào ô bên dưới:</p>
+        <div class="upload-area" id="upload-area">
+            <input type="file" id="file-input" accept="image/*" hidden>
+            <p>Kéo thả ảnh tại đây hoặc <span id="select-file">chọn file</span></p>
+        </div>
+        <div class="image-preview" id="image-preview"></div>
+        <button id="analyze-btn" disabled>Phân tích</button>
+        <div class="result-box" id="result-box">
+            <h2>Kết quả phân loại:</h2>
+            <p id="result-text">Chờ ảnh để phân tích...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
